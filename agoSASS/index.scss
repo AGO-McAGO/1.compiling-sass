@@ -1,0 +1,14 @@
+
+/*
+The order of importing files matter. Files that have other files depending on them should be imported first (i.e. at the top); like "variables" as seen here.
+A file depending on a value declared in another file must be below the file it is depending on.
+*/
+
+@import "variables"; // for variables and functions.
+@import "base"; // for base and layout.
+
+
+// to be defined later.
+@import "colours"; // colours.
+@import "components"; // components (buttons, cards, navbar, e.t.c).
+@import "utilities"; // utilities (margin, padding, opacity, e.t.c).
