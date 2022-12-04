@@ -22,3 +22,8 @@ $base-box-shadow: 0.0625rem 0.1875rem 0.3125rem rgba(0,0,0,0.1);
 
 // font sizes
 $base-font-size: 1rem;
+// multiplying the "base-font-size" by other numbers to increase or decrease the new font-size to be declared, as shown below.
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 4;
