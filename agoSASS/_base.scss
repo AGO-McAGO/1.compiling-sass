@@ -1,10 +1,4 @@
 
-/*
-"_base.sccs" will not be compiled. Any SASS file starting with an underscore (i.e. "_") indicates that it should not be compile alongside the other SASS files.
-Most files starting with underscores are usually partials that are imported into the root SASS file (i.e. "index.scss").
-*/
-
-
 /* reset styles */
 * {
   color: inherit;

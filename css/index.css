@@ -22,39 +22,20 @@ img {
   max-width: 100%;
 }
 
-h1 {
-  color: #0346f0;
-  margin-bottom: 0.75rem;
-}
-
-a {
-  color: #03f003;
-}
-
-button {
-  color: #ffffff;
-  border: 0;
-  background: #0346f0;
-  border-radius: 1.25rem;
+.card {
+  display: block;
   padding: 0.75rem;
+  border: 0.0625rem groove #dddddd;
+  box-shadow: 0.0625rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.1);
 }
-
-.error {
-  color: #f00303;
-  border-color: #f00303;
-  border-style: groove;
-  margin: 0.75rem;
-  padding: 0.75rem;
-  border-radius: 1.25rem;
-  border-width: 0.0625rem;
+.card .card-title {
+  font-size: 1rem;
+  padding-bottom: 0.75rem;
+  font-weight: bold;
 }
-
-.notification {
-  color: #03f003;
-  border-color: #03f003;
-  border-style: groove;
-  margin: 0.75rem;
-  padding: 0.75rem;
-  border-radius: 1.25rem;
-  border-width: 0.0625rem;
+.card .card-body {
+  font-size: 1rem;
+}
+.card .card-body a {
+  text-decoration: underline;
 }
