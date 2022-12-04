@@ -1,2 +1,2 @@
 
-SASS compiled then quick look at variables.
+Comments added to gulp.js file.
