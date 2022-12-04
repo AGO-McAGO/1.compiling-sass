@@ -28,10 +28,3 @@
 
 
   } // end card.
-
-  
-  //                      ** Just Notes **
-  @debug math.div(10, 4); // will divide 10 by 4 and return the result.
-  @debug math.floor(2.5); // will round down (irrespective of the decimal place) and return only the whole number, removing the decimal place.
-  @debug math.ceil(4.2); // will round up (irrespective of the decimal place) and return only the whole number, removing the decimal place.
-  @debug math.max(10, 4, 1, 24, 7, 11); // will return the highest value from the passed in values.
