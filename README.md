@@ -1,2 +1,2 @@
 
-Comments added to gulp.js file.
+Comments added to gulpfile.js file.
