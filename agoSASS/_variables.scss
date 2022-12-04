@@ -23,9 +23,6 @@ $colours: ( // a map (of colours): a collection of colours.
     "white": #ffffff,
   );
 
-.test-btn {
-    background: map-get($colours, "orange"); // usage of the map colours collection.
-  }
   
   // the "map-get()" method gets/retrieves a value from a map. The 1st argument is which map to be looked into, 2nd argument is the key of the value to be retrieved.
   @debug map-get($colours, "purple"); // "map-get()" returns/retrieves the value of the key (i.e. purple) passed into the method.
