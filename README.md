@@ -1,2 +1,2 @@
 
-Conditionals: Help to generate some styles base on certain conditions.
+parent selectors: changes made in index.html and _colours.scss file.

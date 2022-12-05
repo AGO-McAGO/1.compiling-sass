@@ -1,10 +1,13 @@
 
-// to cycle/loop through the map colours collection.
 @each $key, $value in $colours {
-    // for each key-value pair, generate a text colour class and a background colour class.
+  .text-#{$key} {
+    color: $value;
+  }
 
-  .text-#{$key} { // set the "$key" as done.
-    color: $value; // then the property's value to "$value" (i.e. the value of the "$key").
+  .text-hover-#{$key} { // hover effect.
+    &:hover {
+      color: $value;
+    }
   }
 
   .bg-#{$key} {
@@ -21,6 +24,12 @@
       color: mix(white, $value, $i * 10);
     }
 
+    .text-hover-#{$key}-light-#{$i} {
+      &:hover {
+        color: mix(white, $value, $i * 10);
+      }
+    }
+
     .bg-#{$key}-light-#{$i} {
       background-color: mix(white, $value, $i * 10);
     }
@@ -33,6 +42,12 @@
 
     .text-#{$key}-dark-#{$i} {
       color: mix(black, $value, $i * 10);
+    }
+
+    .text-hover-#{$key}-dark-#{$i} {
+      &:hover {
+        color: mix(black, $value, $i * 10);
+      }
     }
 
     .bg-#{$key}-dark-#{$i} {
