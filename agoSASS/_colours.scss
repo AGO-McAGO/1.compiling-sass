@@ -12,6 +12,8 @@
   }
 
 
+  @if ( $value != black and $value != white ) {
+    
   // light variations of each colour.
   @for $i from 1 through 9 {
 
@@ -36,6 +38,8 @@
     .bg-#{$key}-dark-#{$i} {
       background-color: mix(black, $value, $i * 10);
     }
+
+  }
 
   }
 

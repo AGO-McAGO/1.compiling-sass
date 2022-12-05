@@ -19,19 +19,11 @@ $colours: ( // a map (of colours): a collection of colours.
     "orange": #ffa600,
     "purple": #800080,
     "gray": #808080,
-    "black": #000000,
-    "white": #ffffff,
+    "black": black,
+    "white": white,
   );
 
   
-  // the "map-get()" method gets/retrieves a value from a map. The 1st argument is which map to be looked into, 2nd argument is the key of the value to be retrieved.
-  @debug map-get($colours, "purple"); // "map-get()" returns/retrieves the value of the key (i.e. purple) passed into the method.
-  @debug map-has-key($colours, "secondary"); // "map-has-key()" returns true or false whether the key (i.e. secondary) passed in exits in the map collection.
-  @debug map-has-key($colours, "tertiary");
-  @debug map-remove($colours, "primary"); // this will remove the key and value of "primary", from the map colours collection.
-  @debug map-merge($colours, ("goldenrod": #daa520) ); // to add a new key-value pair into the colours collection.
-
-
 // spacing
 $base-padding: 0.75rem;
 $base-margin: 0.75rem;
