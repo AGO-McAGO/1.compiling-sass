@@ -1,0 +1,45 @@
+
+/*
+Mixins: can be declared with or without parameters. They're declared and used/included in places desired.
+
+a "btn" mixin declared with a default parameter (i.e. $bg-color) and it's value (i.e. #d3d885) set already,
+the background colour property's value of the mixin is set to the parameter (i.e. $bg-color) passed in.
+*/
+@mixin btn($bg-color: #d3d885) {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    padding: $base-padding $base-padding * 2;
+    border-radius: $base-border-radius;
+    background-color: $bg-color;
+  }
+  
+  .btn {
+    @include btn; // the "btn" mixin is included here, meaning this ".btn" selector will inherit all of the styling/rules of the "btn" mixin defined above.
+  }
+  
+  @each $key, $value in $colours {
+
+    .btn-#{$key} {
+
+        /*
+        "btn" mixin include here with the argument ($value) which is the value of the $bg-color passed in as parameter when declared above.
+        This means the default value set at declaration of the "btn" mixin will be overwritten by $value (which is from the "variables" file).
+        */
+      @include btn($value);
+      &:hover {
+        background-color: lighten($value, 5);
+      }
+    }
+
+    .btn-outlined-#{$key} {
+      @include btn(#ffffff); // here it's included with the colour passed in directly as the argument, which will overwritten the default value.
+      border: $base-border-thickness solid $value;
+      &:hover {
+        background-color: $value;
+      }
+    }
+
+
+  }
