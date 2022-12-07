@@ -2624,6 +2624,21 @@ the background colour property's value of the mixin is set to the parameter (i.e
   background-color: #0346f0;
 }
 
+.btn-complement-primary {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.25rem;
+  background-color: #0346f0;
+  color: #fede8e;
+}
+.btn-complement-primary:hover {
+  color: #0346f0;
+  background-color: #fede8e;
+}
+
 .btn-secondary {
   /*
   "btn" mixin include here with the argument ($value) which is the value of the $bg-color passed in as parameter when declared above.
@@ -2653,6 +2668,21 @@ the background colour property's value of the mixin is set to the parameter (i.e
 }
 .btn-outlined-secondary:hover {
   background-color: #03f003;
+}
+
+.btn-complement-secondary {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.25rem;
+  background-color: #03f003;
+  color: #fe8efe;
+}
+.btn-complement-secondary:hover {
+  color: #03f003;
+  background-color: #fe8efe;
 }
 
 .btn-error {
@@ -2686,6 +2716,21 @@ the background colour property's value of the mixin is set to the parameter (i.e
   background-color: #f00303;
 }
 
+.btn-complement-error {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.25rem;
+  background-color: #f00303;
+  color: #8efefe;
+}
+.btn-complement-error:hover {
+  color: #f00303;
+  background-color: #8efefe;
+}
+
 .btn-info {
   /*
   "btn" mixin include here with the argument ($value) which is the value of the $bg-color passed in as parameter when declared above.
@@ -2715,6 +2760,21 @@ the background colour property's value of the mixin is set to the parameter (i.e
 }
 .btn-outlined-info:hover {
   background-color: #f0e003;
+}
+
+.btn-complement-info {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.25rem;
+  background-color: #f0e003;
+  color: #8e96fe;
+}
+.btn-complement-info:hover {
+  color: #f0e003;
+  background-color: #8e96fe;
 }
 
 .btn-blue {
@@ -2748,6 +2808,21 @@ the background colour property's value of the mixin is set to the parameter (i.e
   background-color: #1919e6;
 }
 
+.btn-complement-blue {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.25rem;
+  background-color: #1919e6;
+  color: #f5f5a3;
+}
+.btn-complement-blue:hover {
+  color: #1919e6;
+  background-color: #f5f5a3;
+}
+
 .btn-red {
   /*
   "btn" mixin include here with the argument ($value) which is the value of the $bg-color passed in as parameter when declared above.
@@ -2777,6 +2852,21 @@ the background colour property's value of the mixin is set to the parameter (i.e
 }
 .btn-outlined-red:hover {
   background-color: #e61919;
+}
+
+.btn-complement-red {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.25rem;
+  background-color: #e61919;
+  color: #a3f5f5;
+}
+.btn-complement-red:hover {
+  color: #e61919;
+  background-color: #a3f5f5;
 }
 
 .btn-yellow {
@@ -2810,6 +2900,21 @@ the background colour property's value of the mixin is set to the parameter (i.e
   background-color: #e6e619;
 }
 
+.btn-complement-yellow {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.25rem;
+  background-color: #e6e619;
+  color: #a3a3f5;
+}
+.btn-complement-yellow:hover {
+  color: #e6e619;
+  background-color: #a3a3f5;
+}
+
 .btn-green {
   /*
   "btn" mixin include here with the argument ($value) which is the value of the $bg-color passed in as parameter when declared above.
@@ -2839,6 +2944,21 @@ the background colour property's value of the mixin is set to the parameter (i.e
 }
 .btn-outlined-green:hover {
   background-color: #19e635;
+}
+
+.btn-complement-green {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.25rem;
+  background-color: #19e635;
+  color: #f5a3ea;
+}
+.btn-complement-green:hover {
+  color: #19e635;
+  background-color: #f5a3ea;
 }
 
 .btn-orange {
@@ -2872,6 +2992,21 @@ the background colour property's value of the mixin is set to the parameter (i.e
   background-color: #ffa600;
 }
 
+.btn-complement-orange {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.25rem;
+  background-color: #ffa600;
+  color: #99bdff;
+}
+.btn-complement-orange:hover {
+  color: #ffa600;
+  background-color: #99bdff;
+}
+
 .btn-purple {
   /*
   "btn" mixin include here with the argument ($value) which is the value of the $bg-color passed in as parameter when declared above.
@@ -2901,6 +3036,21 @@ the background colour property's value of the mixin is set to the parameter (i.e
 }
 .btn-outlined-purple:hover {
   background-color: #800080;
+}
+
+.btn-complement-purple {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.25rem;
+  background-color: #800080;
+  color: #1aff1a;
+}
+.btn-complement-purple:hover {
+  color: #800080;
+  background-color: #1aff1a;
 }
 
 .btn-gray {
@@ -2934,6 +3084,21 @@ the background colour property's value of the mixin is set to the parameter (i.e
   background-color: #808080;
 }
 
+.btn-complement-gray {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.25rem;
+  background-color: #808080;
+  color: #cdcdcd;
+}
+.btn-complement-gray:hover {
+  color: #808080;
+  background-color: #cdcdcd;
+}
+
 .btn-black {
   /*
   "btn" mixin include here with the argument ($value) which is the value of the $bg-color passed in as parameter when declared above.
@@ -2965,6 +3130,21 @@ the background colour property's value of the mixin is set to the parameter (i.e
   background-color: black;
 }
 
+.btn-complement-black {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.25rem;
+  background-color: black;
+  color: #4d4d4d;
+}
+.btn-complement-black:hover {
+  color: black;
+  background-color: #4d4d4d;
+}
+
 .btn-white {
   /*
   "btn" mixin include here with the argument ($value) which is the value of the $bg-color passed in as parameter when declared above.
@@ -2993,5 +3173,20 @@ the background colour property's value of the mixin is set to the parameter (i.e
   border: 0.0625rem solid white;
 }
 .btn-outlined-white:hover {
+  background-color: white;
+}
+
+.btn-complement-white {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.25rem;
+  background-color: white;
+  color: white;
+}
+.btn-complement-white:hover {
+  color: white;
   background-color: white;
 }
