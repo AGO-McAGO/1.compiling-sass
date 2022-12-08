@@ -1,7 +1,10 @@
 
 @import "functions";
 @import "variables";
+
 @import "base"; // for base and layout.
+@import "breakpoints";
+
 @import "colours";
 
 // components (buttons, cards, navbar, e.t.c).

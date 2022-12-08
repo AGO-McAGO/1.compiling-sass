@@ -1,0 +1,72 @@
+
+$breakpoints: (
+  "xs": 0,
+  "sm": 480px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1200px,
+);
+
+@mixin xs {
+  @media (min-width: map-get($breakpoints, "xs")) { // setting the mediaquery.
+    @content; // referring to the rules/styles that'll be applied.
+  }
+}
+
+@mixin sm {
+  @media (min-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+
+@mixin breakpoint($bp: 0) { // with a parameter passed in.
+  @media (min-width: $bp) { // whatever breakpoint value can be passed in.
+    @content;
+  }
+}
+
+.responsive-test {
+
+  @include xs {
+    color: rgb(103, 2, 2);
+  }
+
+  @include sm {
+    color: blue;
+  }
+
+  @include md {
+    color: green;
+  }
+
+  @include lg {
+    color: purple;
+  }
+
+  @include xl {
+    color: orange;
+  }
+
+  @include breakpoint(1400px) {
+    color: rgb(213, 196, 12);
+  }
+
+}
