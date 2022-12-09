@@ -1,2 +1,2 @@
 
-Extend: enables inheriting css properties from another rule.
+Using the SASS CSS library built so far to create a simple homepage (i.e. homepage.html).
