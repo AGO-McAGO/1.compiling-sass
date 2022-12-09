@@ -1,0 +1,28 @@
+
+%flex-layout { // the "%" sign prevents the "flex-layout" from been compiled to css since it's just to be extended into the ".navbar" selector.
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    @extend %flex-layout; // by extending the "flex-layout" rule here in the ".navbar", the navbar selector automatically inherits all of the styles of the ".flex-layout".
+    padding: $base-padding $base-padding * 2;
+    box-shadow: $base-box-shadow;
+    .site-title {
+      font-size: $font-size-lg;
+    }
+    .container {
+      @extend %flex-layout;
+    }
+  }
+  
+  // to add a background colour to the navbar; of different variations, the variations can be changed in the navbar markup of the index.html file.
+  @each $key, $value in $colours {
+    .navbar-#{$key} {
+      @extend .navbar;
+      background-color: $value;
+    }
+  }
