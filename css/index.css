@@ -1,3 +1,10 @@
+/*
+to import the "index.scss" file (which is the main library built) from the "agoSASS" folder.
+The path does not need to be defined, it'll automatically import the index.scss file.
+The import must be below every other thing inside this new "index.scss" file.
+
+When compiling, it'll compile this file and include everything from the "index.scss" file inside "agoSASS" folder as well.
+*/
 /* reset styles */
 * {
   color: inherit;
@@ -120,47 +127,43 @@ img {
   }
 }
 .text-primary {
-  color: #0346f0;
-}
-
-.text-hover-primary:hover {
-  color: #0346f0;
+  color: #4b0082;
 }
 
 .bg-primary {
-  background-color: #0346f0;
+  background-color: #4b0082;
 }
 
 .bg-primary-light-2 {
-  background-color: #356bf3;
+  background-color: #6f339b;
 }
 
 .bg-primary-light-4 {
-  background-color: #6890f6;
+  background-color: #9366b4;
 }
 
 .bg-primary-light-6 {
-  background-color: #9ab5f9;
+  background-color: #b799cd;
 }
 
 .bg-primary-light-8 {
-  background-color: #cddafc;
+  background-color: #dbcce6;
 }
 
 .bg-primary-dark-2 {
-  background-color: #0238c0;
+  background-color: #3c0068;
 }
 
 .bg-primary-dark-4 {
-  background-color: #022a90;
+  background-color: #2d004e;
 }
 
 .bg-primary-dark-6 {
-  background-color: #011c60;
+  background-color: #1e0034;
 }
 
 .bg-primary-dark-8 {
-  background-color: #010e30;
+  background-color: #0f001a;
 }
 
 .text-secondary {
@@ -333,10 +336,10 @@ the background colour property's value of the mixin is set to the parameter (i.e
   border: 0;
   padding: 0.75rem 1.5rem;
   border-radius: 1.25rem;
-  background-color: #0346f0;
+  background-color: #4b0082;
 }
 .btn-primary:hover {
-  background-color: #1053fc;
+  background-color: #5a009c;
 }
 
 .btn-complement-primary {
@@ -346,12 +349,12 @@ the background colour property's value of the mixin is set to the parameter (i.e
   border: 0;
   padding: 0.75rem 1.5rem;
   border-radius: 1.25rem;
-  background-color: #0346f0;
-  color: #fede8e;
+  background-color: #4b0082;
+  color: #7cff1c;
 }
 .btn-complement-primary:hover {
-  color: #0346f0;
-  background-color: #fede8e;
+  color: #4b0082;
+  background-color: #7cff1c;
 }
 
 .btn-secondary {
@@ -478,7 +481,7 @@ the background colour property's value of the mixin is set to the parameter (i.e
   font-size: 1.5rem;
 }
 .navbar-primary {
-  background-color: #0346f0;
+  background-color: #4b0082;
 }
 
 .p-0 {

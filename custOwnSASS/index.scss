@@ -1,0 +1,12 @@
+
+$primary: 	#4b0082; // to set a new primary colour different from the default one compile from "index.scss" file of "agoSASS" folder.
+
+
+/*
+to import the "index.scss" file (which is the main library built) from the "agoSASS" folder.
+The path does not need to be defined, it'll automatically import the index.scss file.
+The import must be below every other thing inside this new "index.scss" file.
+
+When compiling, it'll compile this file and include everything from the "index.scss" file inside "agoSASS" folder as well.
+*/
+@import "agoSASS";

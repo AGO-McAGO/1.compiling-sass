@@ -1,9 +1,13 @@
 
 // theme colours
-$primary: #0346f0;
-$secondary: #03f003;
-$error: #f00303;
-$info: #f0e003;
+/*
+"!default" added in the declaration of these variables means this should be the values of the variables unless there's another value set for the variables elsewhere.
+This is done for variables that might be overwritten in future.
+*/
+$primary: #0346f0 !default;
+$secondary: #03f003 !default;
+$error: #f00303 !default;
+$info: #f0e003 !default;
 
 
 // colour palette
