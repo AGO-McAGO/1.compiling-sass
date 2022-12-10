@@ -5,6 +5,10 @@ The import must be below every other thing inside this new "index.scss" file.
 
 When compiling, it'll compile this file and include everything from the "index.scss" file inside "agoSASS" folder as well.
 */
+/*
+"!default" added in the declaration of these variables means this should be the values of the variables unless there's another value set for the variables elsewhere.
+This is done for variables that might be overwritten in future.
+*/
 /* reset styles */
 * {
   color: inherit;
@@ -482,6 +486,14 @@ the background colour property's value of the mixin is set to the parameter (i.e
 }
 .navbar-primary {
   background-color: #4b0082;
+}
+
+.badge-orange {
+  border-radius: 5rem;
+  background-color: #ffa600;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
 }
 
 .p-0 {
