@@ -11,7 +11,7 @@ function buildStyles() {
 }
 
 function watchTask() {
-  watch( [ "agoSASS/**/*.scss", ".html" ], buildStyles );
+  watch( [ "agoSASS/**/*.scss", "*.html" ], buildStyles );
 }
 
 exports.default = series( buildStyles , watchTask );
